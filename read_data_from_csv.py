@@ -15,7 +15,7 @@ def data_uploader():
     col[0] = col[0][26:]
     col[-1] = col[-1][:2]
 
-    # Split strang DF to list of separet rows
+    # Split string DF to list of separate rows
     rows_list = []
     for row in students_data.iterrows():
         rows_list.append(list(row[1].str.split(';')))
